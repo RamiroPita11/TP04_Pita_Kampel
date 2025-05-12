@@ -1,8 +1,19 @@
 ﻿@{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Juego";
 }
 
-<div>
-    <h1>Index</h1>
-    <p>Bienvenidos al sitio web de NombreProyecto</p>
+<div> 
+<h1>Bienvenido al ahorcado </h1>
+<h3>Adivine la palabra @ViewBag.LetrasAdivinadas</h3>
+
+<form action = '@Url.Action("ArriesgarLetra")'> 
+<input type = "text" name ="letra" />
+<input type = "submit" />
+</form>
+
+<form action = '@Url.Action("ArriesgarPalabra")'> 
+<input type = "text" name ="palabra"/>
+<input type = "submit" />
+</form>
+
 </div>

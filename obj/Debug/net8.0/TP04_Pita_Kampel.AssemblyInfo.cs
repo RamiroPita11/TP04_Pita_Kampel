@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP04_Pita_Kampel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d43561d029aef4caebe69a97e0660f2850b92da4")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP04_Pita_Kampel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP04_Pita_Kampel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

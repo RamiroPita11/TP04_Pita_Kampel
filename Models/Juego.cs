@@ -3,31 +3,26 @@ namespace TP04_Pita_Kampel.Models;
 public class Juego
 {
     public string palabra { get; private set; }
-    public int intentosRealizados;
+    public int intentosRealizados{ get; private set; }
+     public  string[] ListaDePalabras { get; private set; }
     public List<char>letrasDeLaPalabra{ get; private set; }
      public List<char> letrasArriesgadas { get; private set; }
+    
+       
 
 
-    public Juego (string palabra, int intentosRealizados){
-        this.palabra=palabra;
-        this.intentosRealizados=intentosRealizados;
+    public Juego (){
+        intentosRealizados = 0;
         letrasDeLaPalabra=new List<char>();
         letrasArriesgadas=new List<char>();
+        ListaDePalabras= new string[]{"abogado", "avion"};
       
     }
-     public static List<string> ListaDePalabras = new List<string>
-    {
-        "abogado", "aeropuerto", "aluminio", "banco", "cachorro", "computadora", "dinosaurio", "espejo", 
-        "familia", "gravedad", "hormiga", "independencia", "juguete", "kilómetro", "luz", "mapache", 
-        "navegar", "oportunidad", "película", "químico", "relámpago", "sabiduría", "tierra", "universo", 
-        "viento", "xenófobo", "yogur", "zafiro", "avión", "balón", "carrera", "delfín", "escalera", 
-        "flor", "guitarra", "hoja", "islote", "jalapeño", "koala", "león", "misterio", "noche", 
-        "océano", "pájaro", "quinto", "rosa", "silla", "tren", "uvas", "viento"
-    };
+
     public string elegirPalabra()
     {
         Random rand = new Random();
-        int random = rand.Next(ListaDePalabras.Count);  
+        int random = rand.Next(ListaDePalabras.Length);  
         palabra = ListaDePalabras[random]; 
         return palabra;
     }
@@ -35,14 +30,38 @@ public class Juego
     
     public void inicializarLetrasPalabra()
     {
-    foreach (char letra in palabra)
-    {
-        letrasDeLaPalabra.Add(letra);
+   
+        for (int i = 0; i < palabra.Length; i++)
+        {
+             letrasDeLaPalabra.Add('_');
+        }
     }
-    for (int i = 0; i < letrasDeLaPalabra.Count; i++)
+
+    public void arriesgarLetra(char letraArriesgada)
     {
-        letrasDeLaPalabra[i] = '_';  
-    }
+      bool Adivino = false;
+     if(letrasArriesgadas.Contains(letraArriesgada)){
+        Console.WriteLine("Ya se intento utilizar esta letra");
+        return;
+     }
+     else{  
+        
+          for (int i = 0; i < palabra.Length; i++)
+        {
+            if (palabra[i] == letraArriesgada)
+            {
+                letrasDeLaPalabra[i] = letraArriesgada;
+                Adivino = true;
+            }
+        }
+        
+        letrasArriesgadas.Add(letraArriesgada);
+     }
+     if(!Adivino) 
+     {
+        intentosRealizados++;
+     }
+        
     }
 
     public void arriesgarPalabra(string palabraArriesgada)
@@ -53,25 +72,6 @@ public class Juego
         else{
             Console.WriteLine("Perdiste");
         }
-    }
-
-    public void arriesgarLetra(char letraArriesgada)
-    {
-      int i=0;
-     if(letrasArriesgadas.Contains(letraArriesgada)){
-        Console.WriteLine("Ya se intento utilizar esta letra");
-     }
-     else{
-        foreach(char letra in palabra){
-            if (letra==letraArriesgada)
-            {
-                 letrasDeLaPalabra[i] = letraArriesgada;
-            }
-            i++;
-        }
-        letrasArriesgadas.Add(letraArriesgada);
-     }
-        intentosRealizados++;
     }
 
 

@@ -7,7 +7,7 @@ namespace TP04_Pita_Kampel.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-    private static Juego juego;
+    private static Juego juego = new Juego();
 
     public HomeController(ILogger<HomeController> logger)
     {
@@ -16,12 +16,11 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        if (juego==null)
-        {
-        juego =new Juego (juego.elegirPalabra(), 0);    
+       
+        string palabra = juego.elegirPalabra();
         juego.inicializarLetrasPalabra();
         
-        }
+        
 
         ViewBag.LetrasAdivinadas = juego.letrasDeLaPalabra;
         ViewBag.LetrasUsadas = juego.letrasArriesgadas;
@@ -32,7 +31,7 @@ public class HomeController : Controller
 
     public IActionResult ArriesgarLetra(char letra) 
     {
-        if (juego!= null && letra !=null)
+        if (juego != null && letra != null)
         {
             juego.arriesgarLetra(letra);
         }

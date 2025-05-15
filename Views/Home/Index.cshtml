@@ -2,24 +2,44 @@
     ViewData["Title"] = "Juego";
 }
 
-<div> 
-<h1>Bienvenido al ahorcado </h1>
+<div>
+    <h1>Bienvenido al Ahorcado</h1>
 
-<h3>Adivine la palabra 
-@foreach (char letra in ViewBag.LetrasAdivinadas )
+    <h3>Adivine la palabra:</h3>
+    <p>
+       @ViewBag.palabraParcial
+    </p>
+
+    @if (ViewBag.Gano != null)
     {
-        @letra 
+        @ViewBag.Gano
     }
-</h3>
 
-<form action = '@Url.Action("ArriesgarLetra")'> 
-<input type = "text" name ="letra" />
-<input type = "submit" />
-</form>
+    @if (ViewBag.Perdio != null)
+    {
+        <h3 class="mensaje-perdio">@ViewBag.Perdio</h3>
+    }
 
-<form action = '@Url.Action("ArriesgarPalabra")'> 
-<input type = "text" name ="palabra"/>
-<input type = "submit" />
-</form>
+    <p><strong>Intentos realizados:</strong> @(ViewBag.Intentos)</p>
 
+    <h4><strong>Letras usadas:</strong></h4>
+    <ul>
+        @foreach (var letra in ViewBag.LetrasUsadas)
+        {
+            <li>@letra</li>
+        }
+    </ul>
+
+    <h4>Arriesgar letra:</h4>
+    <form action="@Url.Action("ArriesgarLetra")" method="post">
+        <input type="text" name="letra" maxlength="1" required />
+        <input type="submit" value="Arriesgar Letra" />
+    </form>
+
+    
+    <h4>Arriesgar palabra:</h4>
+    <form action="@Url.Action("ArriesgarPalabra")" method="post">
+        <input type="text" name="palabra" required />
+        <input type="submit" value="Arriesgar Palabra" />
+    </form>
 </div>

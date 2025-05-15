@@ -18,8 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = Z:\2025\PROG2025\TP04_Pita_Kampel
 build_property._RazorSourceGeneratorDebug = 
 
+[Z:/2025/PROG2025/TP04_Pita_Kampel/Views/Home/ganoJuego.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxnYW5vSnVlZ28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [Z:/2025/PROG2025/TP04_Pita_Kampel/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[Z:/2025/PROG2025/TP04_Pita_Kampel/Views/Home/perdioJuego.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwZXJkaW9KdWVnby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [Z:/2025/PROG2025/TP04_Pita_Kampel/Views/Shared/_Layout.cshtml]

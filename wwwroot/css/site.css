@@ -1,3 +1,7 @@
+* {
+  color: rgb(103, 103, 104);
+}
+
 html {
   font-size: 14px;
   min-height: 100%;
@@ -12,12 +16,31 @@ html {
 body {
   margin: 10px;
   padding: 10px;
+  background-color: rgb(169, 171, 173);
+
 }
 
 
 footer {
   margin-top: 10px;
   padding: 10px;
-  background-color: #f8f9fa;
-  border-top: 1px solid #e9ecef;
+  background-color: rgb(103, 103, 104);
+  color: aliceblue;
+
+}
+header nav ul li{
+  float: left;
+  margin-right:1%;
+  padding: 1%;
+  background-color: rgb(96, 117, 209);
+  list-style: none;
+  color: rgb(227, 228, 200);
+  border-radius: 10px;
+  margin-bottom: 1.5%;
+}
+div {
+  clear: both;
+}
+h1{
+  text-align: center;
 }

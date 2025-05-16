@@ -3,14 +3,40 @@ namespace TP04_Pita_Kampel.Models
     public static class Juego
     {
         public static string palabra { get; private set; }
+        public static string foto { get; private set; }
         public static int intentosRealizados { get; private set; }
-        public static string[] ListaDePalabras { get; private set; } = new string[] {
-    "avion", "computadora", "guitarra", "ventana", "bicicleta", "flor", "dinosaurio", "programacion", "oceano", "montana", "salud", "perro", "casa", "libro",  "fuego", "arbol", "musica", "deporte", "futbol", "chocolate",
-    "galaxia",
-    "luna",
-    "sol",
+       public static string[] ListaDePalabras { get; private set; } = new string[] {
+    "avion",
+    "manzana",
+    "computadora",
+    "programacion",
+    "cielo",
+    "pelicula",
+    "guitarra",
+    "escritorio",
+    "coche",
+    "flor",
+    "cachorro",
+    "familia",
+    "escuela",
+    "feliz",
+    "amor",
+    "desayuno",
+    "noche",
     "universo",
-    "estrella"
+    "cultura",
+    "sol",
+    "luna",
+    "biblioteca",
+    "piedra",
+    "rayo",
+    "cielo",
+    "musica",
+    "deporte",
+    "jardín",
+    "viento",
+    "lago",
+    "zorro"
 };
         public static List<char> letrasArriesgadas { get; private set; } = new List<char>();
         public static string palabraParcial { get; private set; }
@@ -78,7 +104,7 @@ namespace TP04_Pita_Kampel.Models
 
         static public bool arriesgarPalabra(string palabraArriesgada)
         {
-            bool gano = palabraArriesgada.Equals(palabra, StringComparison.OrdinalIgnoreCase);
+            bool gano = palabraArriesgada.ToLower() == palabra.ToLower();
             return gano;
         }
 

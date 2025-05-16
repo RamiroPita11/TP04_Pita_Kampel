@@ -1,7 +1,15 @@
 ﻿@{
     ViewData["Title"] = "Juego";
 }
-
+<header>
+    <nav> 
+    <ul>
+    <li>Juego</li>
+    <li>Home</li>
+    <li>Privacy</li>
+    </ul>
+    </nav>
+</header>
 <div>
     <h1>Bienvenido al Ahorcado</h1>
 
@@ -17,8 +25,10 @@
 
     @if (ViewBag.Perdio != null)
     {
-        <h3 class="mensaje-perdio">@ViewBag.Perdio</h3>
+        @ViewBag.Perdio
     }
+    
+
 
     <p><strong>Intentos realizados:</strong> @(ViewBag.Intentos)</p>
 

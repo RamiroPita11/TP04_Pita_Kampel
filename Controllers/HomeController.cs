@@ -13,6 +13,7 @@ namespace TP04_Pita_Kampel.Controllers
             _logger = logger;
         }
 
+       
         public IActionResult Index()
         {
             if (string.IsNullOrEmpty(Juego.palabra))
@@ -26,16 +27,16 @@ namespace TP04_Pita_Kampel.Controllers
             ViewBag.MaxIntentos = Juego.maxIntentos;
 
             if (Juego.intentosRealizados == Juego.maxIntentos)
-            {
+            { 
                 ViewBag.Perdio = "Perdiste la partida, se acabaron los intentos.";
-                return RedirectToAction("perdioJuego");
+                return View("perdioJuego");
             }
 
             return View();
         }
        
 
-        [HttpPost]
+        
         public IActionResult ArriesgarLetra(char letra)
         {
             if (letra != default)
@@ -44,15 +45,16 @@ namespace TP04_Pita_Kampel.Controllers
                 if (!adivinada && Juego.intentosRealizados == Juego.maxIntentos)
                 {
                     ViewBag.Perdio = "Perdiste la partida, se acabaron los intentos.";
-                    return RedirectToAction("perdioJuego");
+                    return View("perdioJuego");
                 }
+               
             }
 
          
             if (!Juego.palabraParcial.Contains('_'))
             {
-                ViewBag.Gano = "¡Ganaste la partida!";
-                return RedirectToAction("ganoJuego");
+             ViewBag.Gano = "¡Ganaste la partida!";   
+                return View("ganoJuego");
             }
 
             return RedirectToAction("Index");
@@ -70,15 +72,13 @@ namespace TP04_Pita_Kampel.Controllers
             if (gano)
             {
                 ViewBag.Gano = "¡Ganaste la partida!";
-                return RedirectToAction("ganoJuego");
+                return View("ganoJuego");
             }
             else
-            {
-                ViewBag.Perdio = "Perdiste la partida, la palabra era: " + Juego.palabra;
-               return RedirectToAction("perdioJuego");
+            {      
+                 ViewBag.Perdio = "Perdiste la partida, la palabra era: " + Juego.palabra;
+               return View("perdioJuego");
             }
-
-            return RedirectToAction("Index");
         }
     }
 }

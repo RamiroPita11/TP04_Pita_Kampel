@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\2025\\PROG2025\\TP04_Pita_Kampel\\TP04_Pita_Kampel.csproj": {}
+    "C:\\Users\\diego\\Documents\\GitHub\\TP04_Pita_Kampel\\TP04_Pita_Kampel.csproj": {}
   },
   "projects": {
-    "Z:\\2025\\PROG2025\\TP04_Pita_Kampel\\TP04_Pita_Kampel.csproj": {
+    "C:\\Users\\diego\\Documents\\GitHub\\TP04_Pita_Kampel\\TP04_Pita_Kampel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\2025\\PROG2025\\TP04_Pita_Kampel\\TP04_Pita_Kampel.csproj",
+        "projectUniqueName": "C:\\Users\\diego\\Documents\\GitHub\\TP04_Pita_Kampel\\TP04_Pita_Kampel.csproj",
         "projectName": "TP04_Pita_Kampel",
-        "projectPath": "Z:\\2025\\PROG2025\\TP04_Pita_Kampel\\TP04_Pita_Kampel.csproj",
-        "packagesPath": "C:\\Users\\49261291\\.nuget\\packages\\",
-        "outputPath": "Z:\\2025\\PROG2025\\TP04_Pita_Kampel\\obj\\",
+        "projectPath": "C:\\Users\\diego\\Documents\\GitHub\\TP04_Pita_Kampel\\TP04_Pita_Kampel.csproj",
+        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\diego\\Documents\\GitHub\\TP04_Pita_Kampel\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\49261291\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,7 +39,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -59,6 +56,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -67,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

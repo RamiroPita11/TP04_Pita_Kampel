@@ -16,8 +16,8 @@ html {
 body {
   margin: 10px;
   padding: 10px;
+  text-align: center;
   background-color: rgb(169, 171, 173);
-
 }
 
 
@@ -25,6 +25,7 @@ footer {
   margin-top: 10px;
   padding: 10px;
   background-color: rgb(103, 103, 104);
+  margin-top: 16%;
   color: aliceblue;
 
 }
@@ -32,7 +33,7 @@ header nav ul li{
   float: left;
   margin-right:1%;
   padding: 1%;
-  background-color: rgb(96, 117, 209);
+  background-color: rgb(73, 100, 221);
   list-style: none;
   color: rgb(227, 228, 200);
   border-radius: 10px;
@@ -40,7 +41,17 @@ header nav ul li{
 }
 div {
   clear: both;
+  
 }
 h1{
-  text-align: center;
+  text-align:
+   center;
 }
+h2{
+  color: rgb(230, 239, 247);
+}
+a{
+  color: rgb(227, 228, 200);
+  list-style: none;
+}
+

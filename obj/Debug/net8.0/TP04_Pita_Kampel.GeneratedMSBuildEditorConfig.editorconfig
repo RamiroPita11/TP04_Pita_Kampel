@@ -9,39 +9,41 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TP04_Pita_Kampel
 build_property.RootNamespace = TP04_Pita_Kampel
-build_property.ProjectDir = Z:\2025\PROG2025\TP04_Pita_Kampel\
+build_property.ProjectDir = C:\Users\diego\Documents\GitHub\TP04_Pita_Kampel\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = Z:\2025\PROG2025\TP04_Pita_Kampel
+build_property.MSBuildProjectDirectory = C:\Users\diego\Documents\GitHub\TP04_Pita_Kampel
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[Z:/2025/PROG2025/TP04_Pita_Kampel/Views/Home/ganoJuego.cshtml]
+[C:/Users/diego/Documents/GitHub/TP04_Pita_Kampel/Views/Home/ganoJuego.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxnYW5vSnVlZ28uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP04_Pita_Kampel/Views/Home/Index.cshtml]
+[C:/Users/diego/Documents/GitHub/TP04_Pita_Kampel/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP04_Pita_Kampel/Views/Home/perdioJuego.cshtml]
+[C:/Users/diego/Documents/GitHub/TP04_Pita_Kampel/Views/Home/perdioJuego.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwZXJkaW9KdWVnby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP04_Pita_Kampel/Views/Shared/_Layout.cshtml]
+[C:/Users/diego/Documents/GitHub/TP04_Pita_Kampel/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP04_Pita_Kampel/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/diego/Documents/GitHub/TP04_Pita_Kampel/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP04_Pita_Kampel/Views/_ViewImports.cshtml]
+[C:/Users/diego/Documents/GitHub/TP04_Pita_Kampel/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP04_Pita_Kampel/Views/_ViewStart.cshtml]
+[C:/Users/diego/Documents/GitHub/TP04_Pita_Kampel/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

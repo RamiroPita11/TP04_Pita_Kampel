@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "hy9HO22rqlJrnmSNBVhP2NP6+qTOlF1VVr6fZiFT9ZASsSeoGDpz9DekC7jQ57pIMX2iPM1XdQDaU3H48WnMqQ==",
+  "dgSpecHash": "uzSHrv62w9I=",
   "success": true,
-  "projectFilePath": "Z:\\2025\\PROG2025\\TP04_Pita_Kampel\\TP04_Pita_Kampel.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\diego\\Documents\\GitHub\\TP04_Pita_Kampel\\TP04_Pita_Kampel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.15\\microsoft.netcore.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.15\\microsoft.windowsdesktop.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.15\\microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.15\\microsoft.netcore.app.host.win-x64.8.0.15.nupkg.sha512"
+  ],
   "logs": []
 }

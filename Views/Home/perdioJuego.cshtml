@@ -1,10 +1,19 @@
 @{
     ViewData["Title"] = "Juego";
 }
-
+<header>
+    <nav> 
+    <ul>
+    <li><a asp-controller="Home" asp-action="Index">Juego</a></li>
+    <li>Home</li>
+    <li>Privacy</li>
+    </ul>
+    </nav>
+</header>
 <div>
          @if (ViewBag.Perdio != null)
     {
-        @ViewBag.Perdio
+        <h2>@ViewBag.Perdio</h2>
+        <img src="~/imagenes/ahorcado.png" alt="Portada" width="300" />
     }
 </div>

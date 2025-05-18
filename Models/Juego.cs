@@ -5,39 +5,21 @@ namespace TP04_Pita_Kampel.Models
         public static string palabra { get; private set; }
         public static string foto { get; private set; }
         public static int intentosRealizados { get; private set; }
-       public static string[] ListaDePalabras { get; private set; } = new string[] {
-    "avion",
-    "manzana",
-    "computadora",
-    "programacion",
-    "cielo",
-    "pelicula",
-    "guitarra",
-    "escritorio",
-    "coche",
-    "flor",
-    "cachorro",
-    "familia",
-    "escuela",
-    "feliz",
-    "amor",
-    "desayuno",
-    "noche",
-    "universo",
-    "cultura",
-    "sol",
-    "luna",
-    "biblioteca",
-    "piedra",
-    "rayo",
-    "cielo",
-    "musica",
-    "deporte",
-    "jardín",
-    "viento",
-    "lago",
-    "zorro"
+public static string[] ListaDePalabras { get; private set; } = new string[]
+{
+    "avion", "perro", "gato", "cielo", "mar", "tierra", "sol", "luna", "estrella", "nube",
+    "flor", "arbol", "casa", "puerta", "ventana", "silla", "mesa", "coche", "tren", "barco",
+    "padre", "madre", "hermano", "hermana", "amigo", "amiga", "escuela", "libro", "lapiz", "papel",
+    "agua", "fuego", "aire", "frio", "calor", "verde", "rojo", "azul", "negro", "blanco",
+    "gris", "rosa", "naranja", "morado", "amarillo", "lago", "playa", "bosque", "ciudad", "pueblo",
+    "campo", "camino", "calle", "parque", "pelota", "juego", "deporte", "baile", "cantar", "leer",
+    "escribir", "dibujar", "pintar", "comer", "beber", "dormir", "llorar", "mirar", "ver", "escuchar",
+    "hablar", "pensar", "sentir", "vivir", "morir", "trabajar", "estudiar", "viajar", "volar", "caminar",
+    "correr", "nadar", "subir", "bajar", "entrar", "salir", "abrir", "cerrar", "ganar", "perder",
+    "buscar", "pared", "techo", "suelo", "luz", "reloj", "carro", "botella", "plato", "vaso",
+    "dedo", "mano", "pie", "cabeza", "ojo", "oreja", "nariz", "boca", "pecho", "pierna"
 };
+
         public static List<char> letrasArriesgadas { get; private set; } = new List<char>();
         public static string palabraParcial { get; private set; }
 
